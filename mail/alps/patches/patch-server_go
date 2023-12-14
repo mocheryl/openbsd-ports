@@ -1,0 +1,87 @@
+add FastCGI support
+
+Index: server.go
+--- server.go.orig
++++ server.go
+@@ -1,11 +1,17 @@
+ package alps
+ 
+ import (
++	"context"
+ 	"encoding/json"
++	"errors"
+ 	"fmt"
++	"io/fs"
+ 	"log"
++	"net"
+ 	"net/http"
++	"net/http/fcgi"
+ 	"net/url"
++	"os"
+ 	"strings"
+ 	"sync"
+ 	"time"
+@@ -24,6 +30,7 @@ type Server struct {
+ 	e        *echo.Echo
+ 	Sessions *SessionManager
+ 	Options  *Options
++	l        net.Listener
+ 
+ 	mutex   sync.RWMutex // used for server reload
+ 	plugins []Plugin
+@@ -67,6 +74,55 @@ func newServer(e *echo.Echo, options *Options) (*Serve
+ 
+ 	s.Sessions = newSessionManager(s.dialIMAP, s.dialSMTP, e.Logger)
+ 	return s, nil
++}
++
++func (s *Server) Start(addr string) error {
++	if strings.HasPrefix(addr, "fcgi+unix://") {
++		addr = strings.TrimPrefix(addr, "fcgi+unix://")
++		err := os.Remove(addr)
++		if err != nil && !errors.Is(err, fs.ErrNotExist) {
++			return err
++		}
++		a, err := net.ResolveUnixAddr("unix", addr)
++		if err != nil {
++			return err
++		}
++		s.l, err = net.ListenUnix("unix", a)
++		if err != nil {
++			return err
++		}
++		err = os.Chmod(addr, 0o666)
++		if err != nil {
++			return err
++		}
++		go fcgi.Serve(s.l, s.e)
++		s.e.Logger.Printf("fcgi server started on %v", a)
++		return nil
++	} else if strings.HasPrefix(addr, "fcgi://") {
++		addr = strings.TrimPrefix(addr, "fcgi://")
++		a, err := net.ResolveTCPAddr("tcp", addr)
++		if err != nil {
++			return err
++		}
++		s.l, err = net.ListenTCP("tcp", a)
++		if err != nil {
++			return err
++		}
++		go fcgi.Serve(s.l, s.e)
++		s.e.Logger.Printf("fcgi server started on %v", a)
++		return nil
++	}
++
++	go s.e.Start(addr)
++	return nil
++}
++
++func (s *Server) Shutdown(ctx context.Context) error {
++	if s.l != nil {
++		return s.l.Close()
++	}
++
++	return s.e.Shutdown(ctx)
+ }
+ 
+ func (s *Server) Close() {
