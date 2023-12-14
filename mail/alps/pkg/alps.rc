@@ -1,0 +1,17 @@
+#!/bin/ksh
+
+daemon="${TRUEPREFIX}/bin/alps"
+daemon_execdir="${LOCALSTATEDIR}/www/alps"
+daemon_logger="daemon.info"
+daemon_user="www"
+
+. /etc/rc.d/rc.subr
+
+# Escape "+" in case we are using schemes such as "fcgi+unix",
+# "imap+insecure" or "smtp+insecure".
+pexp=$(echo $pexp | sed "s/+/\\\+/g")
+rc_reload_signal=USR1
+rc_stop_signal=INT
+rc_bg=YES
+
+rc_cmd $1

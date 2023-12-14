@@ -1,0 +1,49 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Configuring HTTP access
+=======================
+
+By default alps serves HTTP requests on its own. It can also be
+configured to run behind HTTP proxy like relayd(8) or nginx(8).
+
+Another option is to let OpenBSD httpd(8) serve HTTP(S) requests
+and pass it to alps via FastCGI protocol.
+
+In every case, it needs to be told the upstream server. Assuming
+SRV DNS records are properly set up:
+
+    # rcctl set alps flags "example.com"
+
+or to manually specify the servers:
+
+    # rcctl set alps flags "imaps://mail.example.org smtps://mail.example.com"
+
+
+Example configuration for httpd(8) and alps communicating via FastCGI
+----------------------------------------------------------------------
+
+Relevant configuration directives in /etc/httpd.conf:
+
+	server "mail.example.org" {
+		listen on * port http
+
+		location "*" {
+			fastcgi socket "/run/alps/alps.sock"
+		}
+	}
+
+Create the directory for alps socket with the following command:
+
+    # install -d -o www ${LOCALSTATEDIR}/www/run/alps
+
+then set the flags so that it uses FastCGI:
+
+    # rcctl set alps flags "-addr fcgi+unix://${LOCALSTATEDIR}/www/run/alps/alps.sock example.com"
+
+Customizing alps
+================
+
+For custom public files and templates please use ${LOCALSTATEDIR}/www/alps
+directory.
