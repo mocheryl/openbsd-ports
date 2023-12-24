@@ -1,0 +1,27 @@
+COMMENT =	minifiers for web formats
+
+MODGO_MODNAME =	github.com/tdewolff/minify/v2
+MODGO_VERSION =	v2.20.10
+
+DISTNAME =	minify-${MODGO_VERSION}
+
+CATEGORIES =	textproc
+
+HOMEPAGE =	https://go.tacodewolff.nl/minify
+
+MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
+
+# MIT
+PERMIT_PACKAGE =	Yes
+
+WANTLIB +=	c pthread
+
+MODULES =	lang/go
+
+post-install:
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/minify
+	@cp ${WRKSRC}/cmd/minify/README.md ${PREFIX}/share/doc/minify/
+
+.include "modules.inc"
+
+.include <bsd.port.mk>
