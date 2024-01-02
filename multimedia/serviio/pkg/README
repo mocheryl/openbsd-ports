@@ -1,0 +1,60 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Configuring HTTP access
+=======================
+
+By default serviio serves HTTP requests on its own. It can also be
+configured to run behind HTTP proxy like relayd(8) or nginx(8).
+
+Example configuration for relayd(8) and serviio communicating via HTTP
+----------------------------------------------------------------------
+
+Relevant configuration directives in /etc/relayd.conf:
+
+	http protocol "httpproxy" {
+		pass
+	}
+
+	relay "proxy" {
+		listen on 0.0.0.0 port 80
+		protocol "httpproxy"
+
+		forward to 127.0.0.1 port 23423
+	}
+
+Then start relayd(8) and serviio:
+
+	# rcctl enable serviio relayd
+	# rcctl start serviio relayd
+
+Initial setup
+=============
+
+Create folder structure where you will store media files and set
+correct permissions.
+
+    $ mkdir ~/Music ~/Pictures ~/Videos
+
+Open up your web browser to http://localhost:23423/console/ and
+navigate to "Library > Shared folders". Set the above folder or
+folders to shared folders options. You may view the scanned content
+on the address http://localhost:23424/mediabrowser/.
+
+Customizing serviio
+===================
+
+Create a friendly name for your server by editing
+"${TRUEPREFIX}/serviio/config/profiles.xml" and set the "FriendlyName"
+element to something more personalized.
+
+Enable the log.
+
+    # mkdir ${LOCALSTATEDIR}/log/serviio
+    # chown _serviio:_serviio ${LOCALSTATEDIR}/log/serviio
+
+Open up "${TRUEPREFIX}/serviio/config/log4j2.xml" for editing and
+replace the element "fileName" with
+"${LOCALSTATEDIR}/log/serviio/serviio.log" and element "filePattern"
+with "${LOCALSTATEDIR}/log/serviio/serviio.log.%i".

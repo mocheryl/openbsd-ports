@@ -1,0 +1,35 @@
+#!/bin/ksh
+
+JAVA_HOME="${TRUEPREFIX}/jdk-1.8.0"
+JAVA="$JAVA_HOME/bin/java"
+SERVIIO_HOME=${TRUEPREFIX}/serviio
+export SERVIIO_HOME
+
+# Setup the classpath
+SERVIIO_CLASS_PATH="$SERVIIO_HOME/lib/*:$SERVIIO_HOME/config"
+
+# Setup Serviio specific properties
+# Uncomment "Dserviio.advertisementDuration" and "Dserviio.remoteHost"
+# options to set them. They cannot be set via daemons flags becouse
+# they will be placed after Java commands and thus ignored.
+JAVA_OPTS="-Djava.net.preferIPv4Stack=true -Djava.awt.headless=true \
+	-Dorg.restlet.engine.loggerFacadeClass=org.restlet.ext.slf4j.Slf4jLoggerFacade \
+	-Dderby.system.home=${LOCALSTATEDIR}/serviio/library \
+	-Dserviio.home=${LOCALSTATEDIR}/serviio \
+	-Dffmpeg.location=ffmpeg -Ddcraw.location=dcraw"
+#	-Dserviio.advertisementDuration=60 -Dserviio.remoteHost=127.0.0.1
+
+daemon="$JAVA -Xmx512M -Xms20M -XX:+UseG1GC -XX:GCTimeRatio=1 \
+	-XX:MinHeapFreeRatio=10 -XX:MaxHeapFreeRatio=20 $JAVA_OPTS -classpath \
+	$SERVIIO_CLASS_PATH org.serviio.MediaServer"
+
+daemon_user="_serviio"
+daemon_execdir="$SERVIIO_HOME"
+
+. /etc/rc.d/rc.subr
+
+pexp=$(echo $pexp | sed "s/+/\\\+/g" | sed "s/*/\\\*/g")
+rc_bg="YES"
+rc_reload="NO"
+
+rc_cmd $1
