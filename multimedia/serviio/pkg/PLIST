@@ -1,5 +1,5 @@
 @newgroup _serviio:896
-@newuser _serviio:896:_serviio::Serviio:${LOCALSTATEDIR}/serviio:/sbin/nologin
+@newuser _serviio:896:_serviio::Serviio Account:${LOCALSTATEDIR}/serviio:/sbin/nologin
 @rcscript ${RCDIR}/serviio
 serviio/
 serviio/config/
@@ -98,7 +98,7 @@ share/doc/serviio/plugins/
 share/doc/serviio/plugins/plugins-readme.txt
 share/examples/login.conf.d/serviio
 @sample ${SYSCONFDIR}/login.conf.d/serviio
-@mode 750
+@mode 755
 @owner _serviio
 @group _serviio
 @sample ${LOCALSTATEDIR}/serviio/
