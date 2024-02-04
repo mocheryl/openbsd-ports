@@ -1,8 +1,8 @@
 COMMENT =	simple and extensible webmail
 
-V =		20231123165633
+V =		20240110190444
 MODGO_MODNAME =	git.sr.ht/~migadu/alps
-MODGO_VERSION =	v0.0.0-${V}-9bf8c269a136
+MODGO_VERSION =	v0.0.0-${V}-adcb58e49563
 
 DISTNAME =	alps-${MODGO_VERSION}
 PKGNAME =	alps-0.0.0.${V}
