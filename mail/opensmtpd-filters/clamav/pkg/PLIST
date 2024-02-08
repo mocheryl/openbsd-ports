@@ -1,0 +1,5 @@
+@pkgpath mail/opensmtpd-filter-clamav
+libexec/smtpd/
+@bin libexec/smtpd/filter-clamav
+@man man/man1/filter-clamav.1
+share/doc/pkg-readmes/${PKGSTEM}
