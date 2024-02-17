@@ -1,0 +1,16 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+To use filter-clamav, you must declare it in smtpd.
+
+Edit the /etc/mail/smtpd.conf file to declare the filter:
+
+  filter "clamav" proc-exec "filter-clamav"
+
+Then add the filter to each listener that should be filtered:
+
+  listen on socket filter "clamav" listen on all filter "clamav"
+
+The filter itself does have some additional configurations, you can
+look at them in filter-clamav(1) man page.
