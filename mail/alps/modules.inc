@@ -8,17 +8,17 @@ MODGO_MODULES =	\
 	github.com/chzyer/test			 v0.0.0-20180213035817-a1ea475d72b1 \
 	github.com/davecgh/go-spew		 v1.1.1 \
 	github.com/dustin/go-humanize		 v1.0.1 \
-	github.com/emersion/go-ical		 v0.0.0-20220601085725-0864dccc089f \
-	github.com/emersion/go-imap/v2		 v2.0.0-alpha.8 \
-	github.com/emersion/go-message		 v0.18.0 \
+	github.com/emersion/go-ical		 v0.0.0-20240127095438-fc1c9d8fb2b6 \
+	github.com/emersion/go-imap/v2		 v2.0.0-beta.2 \
+	github.com/emersion/go-message		 v0.18.1 \
 	github.com/emersion/go-sasl		 v0.0.0-20231106173351-e73c9f7bad43 \
-	github.com/emersion/go-smtp		 v0.20.1 \
+	github.com/emersion/go-smtp		 v0.21.0 \
 	github.com/emersion/go-textwrapper	 v0.0.0-20200911093747-65d896831594 \
 	github.com/emersion/go-vcard		 v0.0.0-20230815062825-8fda7d206ec9 \
-	github.com/emersion/go-webdav		 v0.4.1-0.20240108135824-b043bbd9657b \
-	github.com/fernet/fernet-go		 v0.0.0-20211208181803-9f70042a33ee \
+	github.com/emersion/go-webdav		 v0.5.0 \
+	github.com/fernet/fernet-go		 v0.0.0-20240119011108-303da6aec611 \
 	github.com/golang-jwt/jwt		 v3.2.2+incompatible \
-	github.com/google/uuid			 v1.5.0 \
+	github.com/google/uuid			 v1.6.0 \
 	github.com/gorilla/css			 v1.0.1 \
 	github.com/labstack/echo/v4		 v4.11.4 \
 	github.com/labstack/gommon		 v0.4.2 \
@@ -28,7 +28,7 @@ MODGO_MODULES =	\
 	github.com/microcosm-cc/bluemonday	 v1.0.27-0.20231211125015-19901a849902 \
 	github.com/olekukonko/tablewriter	 v0.0.5 \
 	github.com/pmezard/go-difflib		 v1.0.0 \
-	github.com/rivo/uniseg			 v0.4.4 \
+	github.com/rivo/uniseg			 v0.4.7 \
 	github.com/ssor/bom			 v0.0.0-20170718123548-6386211fdfcf \
 	github.com/stretchr/testify		 v1.8.4 \
 	github.com/teambition/rrule-go		 v1.8.2 \
@@ -37,12 +37,12 @@ MODGO_MODULES =	\
 	github.com/yuin/goldmark		 v1.4.13 \
 	github.com/yuin/gopher-lua		 v1.1.1 \
 	gitlab.com/golang-commonmark/linkify	 v0.0.0-20200225224916-64bca66f6ad3 \
-	golang.org/x/crypto			 v0.18.0 \
+	golang.org/x/crypto			 v0.22.0 \
 	golang.org/x/mod			 v0.8.0 \
-	golang.org/x/net			 v0.20.0 \
+	golang.org/x/net			 v0.24.0 \
 	golang.org/x/sync			 v0.1.0 \
-	golang.org/x/sys			 v0.16.0 \
-	golang.org/x/term			 v0.16.0 \
+	golang.org/x/sys			 v0.19.0 \
+	golang.org/x/term			 v0.19.0 \
 	golang.org/x/text			 v0.14.0 \
 	golang.org/x/time			 v0.5.0 \
 	golang.org/x/tools			 v0.6.0 \
@@ -52,6 +52,8 @@ MODGO_MODULES =	\
 	layeh.com/gopher-luar			 v1.0.11
 
 MODGO_MODFILES =	\
+	github.com/emersion/go-ical	 v0.0.0-20220601085725-0864dccc089f \
+	github.com/emersion/go-message	 v0.18.0 \
 	github.com/emersion/go-sasl	 v0.0.0-20200509203442-7bfe0ed36a21 \
 	github.com/gorilla/css		 v1.0.0 \
 	github.com/mattn/go-isatty	 v0.0.16 \
@@ -66,9 +68,9 @@ MODGO_MODFILES =	\
 	golang.org/x/net		 v0.0.0-20190620200207-3b0461eec859 \
 	golang.org/x/net		 v0.0.0-20210226172049-e18ecbb05110 \
 	golang.org/x/net		 v0.0.0-20220722155237-a158d28d115b \
-	golang.org/x/net		 v0.10.0 \
 	golang.org/x/net		 v0.17.0 \
 	golang.org/x/net		 v0.19.0 \
+	golang.org/x/net		 v0.21.0 \
 	golang.org/x/net		 v0.6.0 \
 	golang.org/x/sync		 v0.0.0-20190423024810-112230192c58 \
 	golang.org/x/sync		 v0.0.0-20220722155255-886fb9371eb4 \
