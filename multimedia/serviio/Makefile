@@ -3,7 +3,7 @@ ONLY_FOR_ARCHS =	amd64
 
 COMMENT =	free media server
 
-V =	2.3
+V =	2.4
 
 DISTNAME =	serviio-$V-linux
 PKGNAME =	serviio-$V
@@ -18,7 +18,7 @@ MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 PERMIT_PACKAGE =	https://serviio.org/licence
 PERMIT_DISTFILES =	https://serviio.org/licence
 
-MASTER_SITES =	https://download.serviio.org/releases/
+SITES =	https://download.serviio.org/releases/
 
 RUN_DEPENDS =	graphics/dcraw \
 				graphics/ffmpeg \
