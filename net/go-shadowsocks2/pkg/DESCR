@@ -1,0 +1,11 @@
+A fresh implementation of Shadowsocks in Go.
+
+Features:
+- SOCKS5 proxy with UDP Associate
+- Support for Netfilter TCP redirect on Linux (IPv6 should work but not
+  tested)
+- Support for Packet Filter TCP redirect on MacOS/Darwin (IPv4 only)
+- UDP tunneling (e.g. relay DNS packets)
+- TCP tunneling (e.g. benchmark with iperf3)
+- SIP003 plugins
+- Replay attack mitigation
