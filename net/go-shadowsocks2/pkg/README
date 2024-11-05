@@ -1,0 +1,17 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Basic setup
+===========
+
+Generate client's password and set the server's configuration
+flags to listen for all traffic.
+
+    # rcctl enable go_shadowsocks2
+    # rcctl set go_shadowsocks2 flags "-s :1080 -password `go-shadowsocks2 -keygen 24`"
+
+Don't forget to pass traffic through the firewall if you have
+it enabled, for example:
+
+    pass in proto { tcp, udp } from any to any port socks
