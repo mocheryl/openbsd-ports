@@ -1,5 +1,5 @@
-@newgroup _serviio:900
-@newuser _serviio:900:_serviio::Serviio Account:${LOCALSTATEDIR}/serviio:/sbin/nologin
+@newgroup _serviio:901
+@newuser _serviio:901:_serviio::Serviio Account:${LOCALSTATEDIR}/serviio:/sbin/nologin
 @rcscript ${RCDIR}/serviio
 serviio/
 serviio/config/
