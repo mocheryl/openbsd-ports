@@ -7,6 +7,7 @@ Personal collection of OpenBSD ports.
     integration to the OpenSMTPD daemon.
 -   [multimedia/serviio](multimedia/serviio/) - Free media server.
 -   [net/go-shadowsocks2](net/go-shadowsocks2/) - Modern shadowsocks in Go.
+-   [sysutils/pistol](sysutils/pistol/) - General purpose file previewer.
 -   [textproc/minify](textproc/minify/) - Minifiers for web formats.
 
 ## Usage
