@@ -2,6 +2,7 @@
 
 Personal collection of OpenBSD ports.
 
+-   [databases/badger](databases/badger/) - Tools to manage Badger database.
 -   [mail/alps](mail/alps/) - Simple and extensible webmail.
 -   [mail/opensmtpd-filter-clamav](mail/opensmtpd-filters/clamav/) - ClamAV
     integration to the OpenSMTPD daemon.
