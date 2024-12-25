@@ -1,0 +1,13 @@
+Badger is a CLI tool which can perform certain operations on Badger
+databases:
+- Backup Badger database to a file in a version-agnostic manner.
+- Run bank test on Badger.
+- Benchmark Badger for different usecases.
+- Generate the autocompletion script for badger for the specified
+shell.
+- Compact all the LSM tables into one level.
+- Print information about the badger key-value store.
+- Restore Badger database from a file.
+- Rotate the old key with new encryption key.
+- Stream the contents of this DB into another DB with the given
+options.
