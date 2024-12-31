@@ -1,0 +1,22 @@
+@newgroup _pfbadhost:903
+@newuser _pfbadhost:903:903::PF Badhost Account:${LOCALSTATEDIR}/empty:/sbin/nologin
+bin/pf-badhost
+share/doc/pf-badhost/
+share/doc/pf-badhost/man.txt
+share/doc/pf-badhost/openbsd.txt
+share/doc/pkg-readmes/${PKGSTEM}
+@cwd ${SYSCONFDIR}
+@mode 640
+@owner _pfbadhost
+@group wheel
+pf-badhost.txt
+@cwd /var
+@mode
+@owner
+@group
+log/pf-badhost/
+@mode 640
+@owner _pfbadhost
+@group wheel
+log/pf-badhost/pf-badhost.log
+log/pf-badhost/pf-badhost.log.0.gz
