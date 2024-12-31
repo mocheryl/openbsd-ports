@@ -1,0 +1,38 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Basic setup
+===========
+
+Add doas(1) rules to doas.conf(5) file for commands that pf-badhost user
+will use.
+
+	permit root
+	permit nopass _pfbadhost cmd /sbin/pfctl args -nf ${SYSCONFDIR}/pf.conf
+	permit nopass _pfbadhost cmd /sbin/pfctl args -t pfbadhost -T replace \
+		-f ${SYSCONFDIR}/pf-badhost.txt
+	# Optional rule for authlog scanning
+	permit nopass _pfbadhost cmd /usr/bin/zcat args \
+		-f ${LOCALSTATEDIR}/log/authlog ${LOCALSTATEDIR}/log/authlog.0.gz
+
+Include the block rules in pf.conf(5) file.
+
+	table <pfbadhost> persist file "${SYSCONFDIR}/pf-badhost.txt"
+	block in quick on egress from <pfbadhost>
+	block out quick on egress to <pfbadhost>
+
+Test the script.
+
+	doas -u _pfbadhost pf-badhost -O openbsd
+	pfctl -f ${SYSCONFDIR}/pf.conf
+	# For good measure, run the script once more
+	doas -u _pfbadhost pf-badhost -O openbsd
+
+To automate the process, create an entry in a system user's crontab(5).
+
+	crontab -u _pfbadhost -e
+
+An example entry:
+
+	~ 0~1 * * *	-s pf-badhost -O openbsd
