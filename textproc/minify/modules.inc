@@ -2,7 +2,7 @@ MODGO_MODULES =	\
 	filippo.io/edwards25519		 v1.1.0 \
 	github.com/cheekybits/is	 v0.0.0-20150225183255-68e9c0620927 \
 	github.com/djherbis/atime	 v1.1.0 \
-	github.com/fsnotify/fsnotify	 v1.7.0 \
+	github.com/fsnotify/fsnotify	 v1.8.0 \
 	github.com/go-sql-driver/mysql	 v1.8.1 \
 	github.com/jmoiron/sqlx		 v1.4.0 \
 	github.com/lib/pq		 v1.10.9 \
@@ -22,5 +22,5 @@ MODGO_MODFILES =	\
 	github.com/mattn/go-sqlite3	 v1.14.6 \
 	github.com/tdewolff/test	 v1.0.11-0.20231101010635-f1265d231d52 \
 	github.com/tdewolff/test	 v1.0.6 \
-	golang.org/x/sys		 v0.4.0
+	golang.org/x/sys		 v0.13.0
 
