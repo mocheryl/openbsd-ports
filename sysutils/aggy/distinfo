@@ -1,0 +1,6 @@
+SHA256 (aggy-v0.3.0.zip) = /v3hUR99pJlyLAsITV6Jg3U8UyInUIziCi7HnWsFm6w=
+SHA256 (go_modules/golang.org/x/sys/@v/v0.15.0.mod) = 0iezJfYh9OvijTm6dz6pm4cPOTt8CcNFksNlsW3VYN4=
+SHA256 (go_modules/golang.org/x/sys/@v/v0.15.0.zip) = hhLrQWxznDsEzkjcvmVjLG+8QnAx/Zgcrs7sZBDR4fw=
+SIZE (aggy-v0.3.0.zip) = 4915
+SIZE (go_modules/golang.org/x/sys/@v/v0.15.0.mod) = 33
+SIZE (go_modules/golang.org/x/sys/@v/v0.15.0.zip) = 1901954
