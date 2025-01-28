@@ -1,0 +1,18 @@
++-------------------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-------------------------------------------------------------------------------
+
+Configuring HTTP access
+=======================
+
+Enable and start the chroma web service:
+
+	# rcctl enable gochromad
+	# rcctl set gochromad flags --csrf-key `head -n 1000 /dev/random | sha1 | cut -b 1-32`
+	# rcctl start gochromad
+
+Navigate your browser to http://localhost:8080/
+
+In case your browser complains about using secure cookies on a non-HTTPS site,
+you will need to place a TLS forwarding proxy in front of the service such as
+relayd(8) available in the base.
