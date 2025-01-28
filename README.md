@@ -12,6 +12,8 @@ Personal collection of OpenBSD ports.
 -   [sysutils/pf-badhost](sysutils/pf-badhost/) - Fast, bi-directional network
     filtering utility.
 -   [sysutils/pistol](sysutils/pistol/) - General purpose file previewer.
+-   [textproc/go-chroma](textproc/go-chroma/) - General purpose syntax
+    highlighter in pure Go.
 -   [textproc/minify](textproc/minify/) - Minifiers for web formats.
 
 ## Usage
