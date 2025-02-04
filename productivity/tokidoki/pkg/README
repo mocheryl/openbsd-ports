@@ -1,0 +1,20 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Basic setup
+===========
+
+Enable the CalDAV/CardDAV web service and add the path to the folder
+that stores the data. You will also need to provide an authentication
+method. Example for authenticating with IMAP and using the default
+location for storage:
+
+	# rcctl enable tokidoki
+	# rcctl set tokidoki flags -auth.url imaps://mail.example.org:993 -storage.url file://${LOCALSTATEDIR}/db/tokidoki
+
+Now start the service. By default it listens on 0.0.0.0:8080 so
+just connect with your CalDAV/CardDAV application to
+http://example.org:8080.
+
+	# rcctl start tokidoki

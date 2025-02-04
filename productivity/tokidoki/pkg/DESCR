@@ -1,0 +1,14 @@
+Tokidoki is a (WIP) carddav and caldav server.
+
+Tokidoki relies on go-webdav for the protocol implementation. It
+provides the storage backend and authentication, both of which are
+easily pluggable.
+
+It currently provides:
+Authentication:
+- IMAP
+- Static file (htpasswd)
+- OAuth 2.0
+Storage:
+- Filesystem
+
