@@ -1,0 +1,24 @@
+@newgroup _forgejo:905
+@newuser _forgejo:905:_forgejo::Forgejo Account:${LOCALSTATEDIR}/forgejo:/bin/sh
+@rcscript ${RCDIR}/forgejo
+@bin bin/forgejo
+@man man/man1/forgejo.1
+share/doc/pkg-readmes/${PKGSTEM}
+share/forgejo/
+share/forgejo/conf/
+@mode 750
+@owner _forgejo
+@group _forgejo
+@sample ${SYSCONFDIR}/forgejo/
+@mode
+@owner
+@group
+share/forgejo/conf/app.example.ini
+@mode 640
+@owner _forgejo
+@group _forgejo
+@sample ${SYSCONFDIR}/forgejo/app.ini
+@mode 750
+@sample ${LOCALSTATEDIR}/forgejo/
+@sample ${LOCALSTATEDIR}/forgejo/custom/
+@sample ${LOCALSTATEDIR}/log/forgejo/

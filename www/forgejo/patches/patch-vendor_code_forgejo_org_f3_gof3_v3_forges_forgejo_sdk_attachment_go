@@ -1,0 +1,12 @@
+Index: vendor/code.forgejo.org/f3/gof3/v3/forges/forgejo/sdk/attachment.go
+--- vendor/code.forgejo.org/f3/gof3/v3/forges/forgejo/sdk/attachment.go.orig
++++ vendor/code.forgejo.org/f3/gof3/v3/forges/forgejo/sdk/attachment.go
+@@ -2,7 +2,7 @@
+ // Use of this source code is governed by a MIT-style
+ // license that can be found in the LICENSE file.
+ 
+-package sdk // import "code.gitea.io/sdk/gitea"
++package sdk
+ import (
+ 	"bytes"
+ 	"encoding/json"
