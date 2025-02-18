@@ -1,5 +1,5 @@
-@newgroup _pfbadhost:903
-@newuser _pfbadhost:903:903::PF Badhost Account:${LOCALSTATEDIR}/empty:/sbin/nologin
+@newgroup _pfbadhost:904
+@newuser _pfbadhost:904:_pfbadhost::PF Badhost Account:${LOCALSTATEDIR}/empty:/sbin/nologin
 bin/pf-badhost
 share/doc/pf-badhost/
 share/doc/pf-badhost/man.txt

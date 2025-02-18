@@ -1,5 +1,5 @@
-@newgroup _go-shadowsocks2:902
-@newuser _go-shadowsocks2:902:_go-shadowsocks2::Go Shadowsocks 2 Account:${LOCALSTATEDIR}/empty:/sbin/nologin
+@newgroup _go-shadowsocks2:903
+@newuser _go-shadowsocks2:903:_go-shadowsocks2::Go Shadowsocks 2 Account:${LOCALSTATEDIR}/empty:/sbin/nologin
 @rcscript ${RCDIR}/go_shadowsocks2
 @bin bin/go-shadowsocks2
 share/doc/pkg-readmes/${PKGSTEM}
