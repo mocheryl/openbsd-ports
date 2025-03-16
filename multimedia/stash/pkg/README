@@ -1,0 +1,54 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+FFMPEG
+======
+
+Stash requires that the installation of FFMPEG has WebP support
+enabled. The one in the official ports doesn't come compiled with
+it by default, so you will need to build and install a custom version
+of it. In the makefile add the following parameters to the build
+arguments:
+
+- "webp" to "WANTLIB".
+- "graphics/libwebp" to "LIB_DEPENDS".
+- "-lwebp", "-lwebpdecoder", "-lwebpdemux", and "-lwebpmux" to
+"LIBavcodec_EXTRALIBS".
+- "--enable-libwebp" to "CONFIGURE_ARGS".
+
+Don't forget to increment the revision. For more information please
+see:
+
+    https://github.com/stashapp/stash/blob/v0.27.2/docs/DEVELOPMENT.md#openbsd
+
+Basic setup
+===========
+
+Enable the service and add a path to the default configuration file:
+
+	# rcctl enable stash
+	# rcctl set stash flags --config /etc/stash/config.yml
+
+Start the service:
+
+	# rcctl start stash
+
+By default it listens on port 9999 so just navigate your browser
+to http://localhost:9999/
+
+Usage
+=====
+
+First thing you might want to do is restrict access to the application
+by creating an account. Go to "Setings -> Security -> Authentication
+-> Credentials" and click "Edit" then set your username and password.
+
+The port sets up folders "${LOCALSTATEDIR}/stash/images" and
+"${LOCALSTATEDIR}/stash/videos" where you can upload images and
+videos respectively, but you can define you own storage location(s)
+in "Settings -> Library". After you have all your content placed
+appropriately, you can start curating it after running the import
+process with "Scan" button found in "Settings -> Tasks -> Library".
+
+For additional information you may view the in-built manual.

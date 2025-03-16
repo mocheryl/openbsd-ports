@@ -1,0 +1,60 @@
+blobs_path: ${LOCALSTATEDIR}/stash/blobs
+blobs_storage: FILESYSTEM
+cache: ${LOCALSTATEDIR}/stash/cache
+calculate_md5: false
+create_image_clip_from_videos: false
+dangerous_allow_public_without_auth: "false"
+database: ${LOCALSTATEDIR}/stash/stash-go.sqlite
+gallery_cover_regex: (poster|cover|folder|board)\.[^\.]+$
+generated: ${LOCALSTATEDIR}/stash/generated
+host: 0.0.0.0
+logaccess: false
+logfile: ${LOCALSTATEDIR}/log/stash/stash.log
+logout: false
+menu_items:
+    - scenes
+    - images
+    - groups
+    - markers
+    - galleries
+    - performers
+    - studios
+    - tags
+no_proxy: localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
+nobrowser: true
+notifications_enabled: true
+parallel_tasks: 1
+plugins:
+    package_sources:
+        - localpath: community
+          name: Community (stable)
+          url: https://stashapp.github.io/CommunityScripts/stable/index.yml
+plugins_path: ${LOCALSTATEDIR}/stash/plugins
+port: 9999
+preview_audio: true
+preview_exclude_end: "0"
+preview_exclude_start: "0"
+preview_segment_duration: 0.75
+preview_segments: 12
+scrapers:
+    package_sources:
+        - localpath: community
+          name: Community (stable)
+          url: https://stashapp.github.io/CommunityScrapers/stable/index.yml
+scrapers_path: ${LOCALSTATEDIR}/stash/scrapers
+security_tripwire_accessed_from_public_internet: ""
+sequential_scanning: false
+show_one_time_moved_notification: false
+sound_on_preview: false
+stash:
+    - path: ${LOCALSTATEDIR}/stash/images
+      excludevideo: true
+      excludeimage: false
+    - path: ${LOCALSTATEDIR}/stash/videos
+      excludevideo: false
+      excludeimage: true
+theme_color: '#202b33'
+ui:
+    lastNoteSeen: "20000101"
+video_file_naming_algorithm: OSHASH
+write_image_thumbnails: true

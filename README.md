@@ -7,6 +7,7 @@ Personal collection of OpenBSD ports.
 -   [mail/opensmtpd-filter-clamav](mail/opensmtpd-filters/clamav/) - ClamAV
     integration to the OpenSMTPD daemon.
 -   [multimedia/serviio](multimedia/serviio/) - Free media server.
+-   [multimedia/stash](multimedia/stash/) - Organizer for your porn.
 -   [net/go-shadowsocks2](net/go-shadowsocks2/) - Modern shadowsocks in Go.
 -   [productivity/tokidoki](productivity/tokidoki/) - Small and robust calendar
     & contacts server.
