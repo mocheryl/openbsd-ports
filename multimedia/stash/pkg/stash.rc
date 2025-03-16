@@ -1,0 +1,11 @@
+#!/bin/ksh
+
+daemon="${TRUEPREFIX}/bin/stash"
+daemon_user="_stash"
+
+. /etc/rc.d/rc.subr
+
+rc_bg="YES"
+rc_reload="NO"
+
+rc_cmd $1

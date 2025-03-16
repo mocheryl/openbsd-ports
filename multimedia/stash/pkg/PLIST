@@ -1,0 +1,29 @@
+@newgroup _stash:906
+@newuser _stash:906:_stash::Stash Account:${LOCALSTATEDIR}/stash:/sbin/nologin
+@rcscript ${RCDIR}/stash
+@bin bin/phasher
+@bin bin/stash
+share/doc/pkg-readmes/${PKGSTEM}
+share/examples/stash/
+@mode 750
+@owner _stash
+@group _stash
+@sample ${SYSCONFDIR}/stash/
+@mode
+@owner
+@group
+share/examples/stash/config.yml
+@mode 640
+@owner _stash
+@group _stash
+@sample ${SYSCONFDIR}/stash/config.yml
+@mode 755
+@sample ${LOCALSTATEDIR}/log/stash/
+@sample ${LOCALSTATEDIR}/stash/
+@sample ${LOCALSTATEDIR}/stash/blobs/
+@sample ${LOCALSTATEDIR}/stash/cache/
+@sample ${LOCALSTATEDIR}/stash/generated/
+@sample ${LOCALSTATEDIR}/stash/images/
+@sample ${LOCALSTATEDIR}/stash/plugins/
+@sample ${LOCALSTATEDIR}/stash/scrapers/
+@sample ${LOCALSTATEDIR}/stash/videos/
