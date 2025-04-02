@@ -9,10 +9,12 @@ MODGO_MODULES =	\
 	github.com/matryer/try		 v0.0.0-20161228173917-9ac251b645a2 \
 	github.com/mattn/go-sqlite3	 v1.14.22 \
 	github.com/pelletier/go-toml	 v1.9.5 \
-	github.com/tdewolff/argp	 v0.0.0-20240625173203-87b04d5d3e52 \
-	github.com/tdewolff/parse/v2	 v2.7.19 \
-	github.com/tdewolff/test	 v1.0.11-0.20240106005702-7de5f7df4739 \
-	golang.org/x/sys		 v0.25.0
+	github.com/tdewolff/argp	 v0.0.0-20250209172303-079abae893fb \
+	github.com/tdewolff/parse/v2	 v2.7.21 \
+	github.com/tdewolff/test	 v1.0.11 \
+	golang.org/x/sys		 v0.31.0 \
+	gopkg.in/check.v1		 v0.0.0-20161208181325-20d25e280405 \
+	gopkg.in/yaml.v3		 v3.0.1
 
 MODGO_MODFILES =	\
 	github.com/go-sql-driver/mysql	 v1.6.0 \
@@ -20,7 +22,6 @@ MODGO_MODFILES =	\
 	github.com/jmoiron/sqlx		 v1.3.5 \
 	github.com/lib/pq		 v1.2.0 \
 	github.com/mattn/go-sqlite3	 v1.14.6 \
-	github.com/tdewolff/test	 v1.0.11-0.20231101010635-f1265d231d52 \
 	github.com/tdewolff/test	 v1.0.6 \
 	golang.org/x/sys		 v0.13.0
 
