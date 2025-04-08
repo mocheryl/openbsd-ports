@@ -1,6 +1,6 @@
 COMMENT =	self-hosted lightweight version control
 
-V =	10.0.1
+V =	10.0.3
 DISTNAME =	forgejo-src-${V}
 PKGNAME =	forgejo-${V}
 
@@ -38,7 +38,7 @@ pre-configure:
 	${SUBST_CMD} ${WRKDIST}/custom/conf/app.example.ini
 
 post-build:
-	@mv ${MODGO_WORKSPACE}/bin/gitea ${MODGO_WORKSPACE}/bin/forgejo
+	@cd ${MODGO_WORKSPACE}/bin && mv gitea forgejo
 
 post-install:
 	${MODGO_WORKSPACE}/bin/forgejo docs --man > ${PREFIX}/man/man1/forgejo.1
