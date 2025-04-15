@@ -1,6 +1,6 @@
 COMMENT =	general purpose syntax highlighter in pure Go
 
-V =	2.15.0
+V =	2.16.0
 
 DISTNAME =	chroma-${V}
 PKGNAME =	go-chroma-${V}
@@ -19,8 +19,8 @@ WANTLIB +=	c pthread
 # cd cmd/chroma/ && go mod vendor
 # cd ../chromad/ && go mod vendor
 # cd .. && mkdir -p ../../chroma-${V}/cmd
-# cp -r chroma chromad ../../chroma-${V}/cmd
-# cd ../.. && tar -cf chroma-${V}.tar chroma-${V}
+# cp -r chroma chromad ../../chroma-${V}/cmd/
+# cd ../../ && tar -cf chroma-${V}.tar chroma-${V}
 # gzip -9o chroma-${V}.tar.gz chroma-${V}.tar
 SITES =	https://ports.mocheryl.org/releases/
 
