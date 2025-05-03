@@ -2,26 +2,6 @@
 | Running ${PKGSTEM} on OpenBSD
 +-----------------------------------------------------------------------
 
-FFMPEG
-======
-
-Stash requires that the installation of FFMPEG has WebP support
-enabled. The one in the official ports doesn't come compiled with
-it by default, so you will need to build and install a custom version
-of it. In the makefile add the following parameters to the build
-arguments:
-
-- "webp" to "WANTLIB".
-- "graphics/libwebp" to "LIB_DEPENDS".
-- "-lwebp", "-lwebpdecoder", "-lwebpdemux", and "-lwebpmux" to
-"LIBavcodec_EXTRALIBS".
-- "--enable-libwebp" to "CONFIGURE_ARGS".
-
-Don't forget to increment the revision. For more information please
-see:
-
-    https://github.com/stashapp/stash/blob/v0.27.2/docs/DEVELOPMENT.md#openbsd
-
 Basic setup
 ===========
 
