@@ -1,7 +1,7 @@
 COMMENT =	organizer for your porn
 
 MODGO_MODNAME =	github.com/stashapp/stash
-MODGO_VERSION =	v0.27.2
+MODGO_VERSION =	v0.28.1
 
 DISTNAME =	stash-${MODGO_VERSION}
 
