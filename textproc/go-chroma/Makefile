@@ -1,6 +1,6 @@
 COMMENT =	general purpose syntax highlighter in pure Go
 
-V =	2.16.0
+V =	2.17.2
 
 DISTNAME =	chroma-${V}
 PKGNAME =	go-chroma-${V}
