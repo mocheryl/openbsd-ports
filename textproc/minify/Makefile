@@ -1,7 +1,7 @@
 COMMENT =	minifiers for web formats
 
 MODGO_MODNAME =	github.com/tdewolff/minify/v2
-MODGO_VERSION =	v2.23.1
+MODGO_VERSION =	v2.23.5
 
 DISTNAME =	minify-${MODGO_VERSION}
 
