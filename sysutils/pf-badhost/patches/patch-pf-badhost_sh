@@ -1,0 +1,12 @@
+Index: pf-badhost.sh
+--- pf-badhost.sh.orig
++++ pf-badhost.sh
+@@ -67,7 +67,7 @@ set -ef #-o pipefail
+ 
+ # HTTP user agent override (Pretend to be Firefox on Win10 by default)
+ # Note: The "fetch" utility on FreeBSD and Dragonfly doesnt support user agent override. Use 'curl' instead
+-_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:83.0) Gecko/20100101 Firefox/83.0"
++_AGENT="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0"
+ 
+ # Enable Logging to /var/log/pf-badhost/
+ _LOG=1
