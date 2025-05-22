@@ -1,6 +1,7 @@
 COMMENT =	fast, bi-directional network filtering utility
 
 V =	0.5
+REVISION =	0
 
 DISTNAME =	pf-badhost-${V}
 
