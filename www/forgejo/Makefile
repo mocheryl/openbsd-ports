@@ -1,6 +1,6 @@
 COMMENT =	self-hosted lightweight version control
 
-V =	10.0.3
+V =	11.0.1
 DISTNAME =	forgejo-src-${V}
 PKGNAME =	forgejo-${V}
 
@@ -21,9 +21,9 @@ MODULES =	lang/go
 
 GO_TAGS =	bindata timetzdata sqlite sqlite_unlock_notify
 MODGO_FLAGS +=	-tags "${GO_TAGS}"
-MODGO_LDFLAGS +=	-X code.gitea.io/gitea/modules/setting.AppWorkPath=${LOCALSTATEDIR}/forgejo
-MODGO_LDFLAGS +=	-X code.gitea.io/gitea/modules/setting.CustomConf=${SYSCONFDIR}/forgejo/app.ini
-MODGO_LDFLAGS +=	-X code.gitea.io/gitea/modules/setting.CustomPath=${LOCALSTATEDIR}/forgejo/custom
+MODGO_LDFLAGS +=	-X forgejo.org/modules/setting.AppWorkPath=${LOCALSTATEDIR}/forgejo
+MODGO_LDFLAGS +=	-X forgejo.org/modules/setting.CustomConf=${SYSCONFDIR}/forgejo/app.ini
+MODGO_LDFLAGS +=	-X forgejo.org/modules/setting.CustomPath=${LOCALSTATEDIR}/forgejo/custom
 MODGO_LDFLAGS +=	-X main.ReleaseVersion=${V}
 MODGO_LDFLAGS +=	-X main.Version=${V}
 MODGO_LDFLAGS +=	-X 'main.Tags=${GO_TAGS}'
@@ -31,14 +31,14 @@ MODGO_LDFLAGS +=	-X main.ForgejoVersion=${V}
 
 RUN_DEPENDS =	devel/git-lfs
 
-ALL_TARGET =	code.gitea.io/gitea
+ALL_TARGET =	forgejo.org
 WRKSRC =	${MODGO_WORKSPACE}/src/${ALL_TARGET}
 
 pre-configure:
 	${SUBST_CMD} ${WRKDIST}/custom/conf/app.example.ini
 
 post-build:
-	@cd ${MODGO_WORKSPACE}/bin && mv gitea forgejo
+	@cd ${MODGO_WORKSPACE}/bin && mv forgejo.org forgejo
 
 post-install:
 	${MODGO_WORKSPACE}/bin/forgejo docs --man > ${PREFIX}/man/man1/forgejo.1
