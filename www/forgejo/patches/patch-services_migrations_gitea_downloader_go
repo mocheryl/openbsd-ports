@@ -1,0 +1,12 @@
+Index: services/migrations/gitea_downloader.go
+--- services/migrations/gitea_downloader.go.orig
++++ services/migrations/gitea_downloader.go
+@@ -544,7 +544,7 @@ func (g *GiteaDownloader) GetPullRequests(page, perPag
+ 
+ 	link, _ := url.Parse(fmt.Sprintf("/repos/%s/%s/pulls", url.PathEscape(g.repoOwner), url.PathEscape(g.repoName)))
+ 	link.RawQuery = opt.QueryEncode()
+-	_, err := getParsedResponse(g.client, "GET", link.String(), http.Header{"content-type": []string{"application/json"}}, nil, &prs)
++	_, err := gitea_sdk.GetParsedResponse(g.client, "GET", link.String(), http.Header{"content-type": []string{"application/json"}}, nil, &prs)
+ 	if err != nil {
+ 		return nil, false, fmt.Errorf("error while listing pull requests (page: %d, pagesize: %d). Error: %w", page, perPage, err)
+ 	}

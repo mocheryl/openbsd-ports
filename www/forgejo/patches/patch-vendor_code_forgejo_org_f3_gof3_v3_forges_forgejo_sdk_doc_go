@@ -1,9 +1,0 @@
-Index: vendor/code.forgejo.org/f3/gof3/v3/forges/forgejo/sdk/doc.go
---- vendor/code.forgejo.org/f3/gof3/v3/forges/forgejo/sdk/doc.go.orig
-+++ vendor/code.forgejo.org/f3/gof3/v3/forges/forgejo/sdk/doc.go
-@@ -6,4 +6,4 @@
- // The version corresponds to the highest supported version
- // of the gitea API, but backwards-compatibility is mostly
- // given.
--package sdk // import "code.gitea.io/sdk/gitea"
-+package sdk

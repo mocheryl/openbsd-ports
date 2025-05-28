@@ -1,0 +1,14 @@
+Index: vendor/code.gitea.io/sdk/gitea/client.go
+--- vendor/code.gitea.io/sdk/gitea/client.go.orig
++++ vendor/code.gitea.io/sdk/gitea/client.go
+@@ -458,6 +458,10 @@ func (c *Client) getResponse(method, path string, head
+ 	return data, resp, nil
+ }
+ 
++func GetParsedResponse(client *Client, method, path string, header http.Header, body io.Reader, obj any) (*Response, error) {
++	return client.getParsedResponse(method, path, header, body, obj)
++}
++
+ func (c *Client) getParsedResponse(method, path string, header http.Header, body io.Reader, obj interface{}) (*Response, error) {
+ 	data, resp, err := c.getResponse(method, path, header, body)
+ 	if err != nil {
