@@ -1,4 +1,3 @@
 @rcscript ${RCDIR}/gochromad
-@bin bin/gochroma
 @bin bin/gochromad
 share/doc/pkg-readmes/${PKGSTEM}

@@ -1,9 +1,11 @@
-COMMENT =	general purpose syntax highlighter in pure Go
+COMMENT-main =	general purpose syntax highlighter in pure Go
+COMMENT-web =	general purpose syntax highlighter in pure Go (web UI)
 
-V =	2.17.2
+V =	2.18.0
 
 DISTNAME =	chroma-${V}
-PKGNAME =	go-chroma-${V}
+PKGNAME-main =	go-chroma-${V}
+PKGNAME-web =	go-chroma-web-${V}
 
 CATEGORIES =	textproc www
 
@@ -15,6 +17,8 @@ MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 PERMIT_PACKAGE =	Yes
 
 WANTLIB +=	c pthread
+
+MULTI_PACKAGES =	-main -web
 
 # cd cmd/chroma/ && go mod vendor
 # cd ../chromad/ && go mod vendor

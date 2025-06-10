@@ -3,3 +3,5 @@ syntax highlighted HTML, ANSI-coloured text, etc.
 
 Chroma is based heavily on Pygments, and includes translators for
 Pygments lexers and styles.
+
+This is the CLI-based version.
