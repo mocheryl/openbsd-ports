@@ -3,8 +3,6 @@ databases:
 - Backup Badger database to a file in a version-agnostic manner.
 - Run bank test on Badger.
 - Benchmark Badger for different usecases.
-- Generate the autocompletion script for badger for the specified
-shell.
 - Compact all the LSM tables into one level.
 - Print information about the badger key-value store.
 - Restore Badger database from a file.
