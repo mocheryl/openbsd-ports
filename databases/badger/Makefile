@@ -1,13 +1,13 @@
 COMMENT =	tools to manage Badger database
 
 MODGO_MODNAME =	github.com/dgraph-io/badger/v4
-MODGO_VERSION =	v4.5.0
+MODGO_VERSION =	v4.7.0
 
 DISTNAME =	badger-${MODGO_VERSION}
 
 CATEGORIES =	databases
 
-HOMEPAGE =	https://dgraph.io/badger
+HOMEPAGE =	https://docs.hypermode.com/badger
 
 MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 
