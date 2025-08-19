@@ -1,0 +1,12 @@
+Index: serviio-2.4/config/log4j2.xml
+--- serviio-2.4/config/log4j2.xml.orig
++++ serviio-2.4/config/log4j2.xml
+@@ -9,7 +9,7 @@
+ <Configuration>
+ 
+     <Appenders>
+-        <RollingFile name="FILE" fileName="${sys:serviio.home}/log/serviio.log" filePattern="${sys:serviio.home}/log/serviio.log.%i">
++        <RollingFile name="FILE" fileName="${LOCALSTATEDIR}/log/serviio/serviio.log" filePattern="${LOCALSTATEDIR}/log/serviio/serviio.log.%i">
+             <PatternLayout pattern="%d{ISO8601} %-5p [%c{1}] %m%n" />
+             <Policies>
+                 <SizeBasedTriggeringPolicy size="5000KB" />
