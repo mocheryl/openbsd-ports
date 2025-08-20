@@ -2,11 +2,6 @@
 @newuser _serviio:902:_serviio::Serviio Account:${LOCALSTATEDIR}/serviio:/sbin/nologin
 @rcscript ${RCDIR}/serviio
 serviio/
-serviio/config/
-serviio/config/application-profiles.xml
-serviio/config/log4j2.xml
-serviio/config/profiles.xml
-serviio/config/serviio.jks
 serviio/lib/
 serviio/lib/activation.jar
 serviio/lib/commons-codec.jar
@@ -59,8 +54,6 @@ serviio/lib/streamflyer-core.jar
 serviio/lib/waifupnp.jar
 serviio/lib/winp.jar
 serviio/lib/xstream.jar
-serviio/library/
-serviio/library/derby.properties
 share/doc/pkg-readmes/${PKGSTEM}
 share/doc/serviio/
 share/doc/serviio/LICENCE.txt
@@ -98,7 +91,20 @@ share/doc/serviio/plugins/
 share/doc/serviio/plugins/plugins-readme.txt
 share/examples/login.conf.d/serviio
 @sample ${SYSCONFDIR}/login.conf.d/serviio
+@sample ${SYSCONFDIR}/serviio/
+share/examples/serviio/
 @mode 755
 @owner _serviio
 @group _serviio
+share/examples/serviio/application-profiles.xml
+@sample ${SYSCONFDIR}/serviio/application-profiles.xml
+share/examples/serviio/log4j2.xml
+@sample ${SYSCONFDIR}/serviio/log4j2.xml
+share/examples/serviio/profiles.xml
+@sample ${SYSCONFDIR}/serviio/profiles.xml
+share/examples/serviio/serviio.jks
+@sample ${SYSCONFDIR}/serviio/serviio.jks
+@sample ${LOCALSTATEDIR}/log/serviio/
+@mode 750
 @sample ${LOCALSTATEDIR}/serviio/
+@sample ${LOCALSTATEDIR}/serviio/plugins/

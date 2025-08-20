@@ -2,11 +2,9 @@
 
 JAVA_HOME="${TRUEPREFIX}/jdk-1.8.0"
 JAVA="$JAVA_HOME/bin/java"
-SERVIIO_HOME=${TRUEPREFIX}/serviio
-export SERVIIO_HOME
 
 # Setup the classpath
-SERVIIO_CLASS_PATH="$SERVIIO_HOME/lib/*:$SERVIIO_HOME/config"
+SERVIIO_CLASS_PATH="${TRUEPREFIX}/serviio/lib/*:${SYSCONFDIR}/serviio"
 
 # Setup Serviio specific properties
 # Uncomment "Dserviio.advertisementDuration" and "Dserviio.remoteHost"
@@ -24,7 +22,7 @@ daemon="$JAVA -Xmx512M -Xms20M -XX:+UseG1GC -XX:GCTimeRatio=1 \
 	$SERVIIO_CLASS_PATH org.serviio.MediaServer"
 
 daemon_user="_serviio"
-daemon_execdir="$SERVIIO_HOME"
+daemon_execdir="${LOCALSTATEDIR}/serviio"
 
 . /etc/rc.d/rc.subr
 

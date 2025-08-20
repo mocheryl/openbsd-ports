@@ -48,13 +48,3 @@ Customizing serviio
 Create a friendly name for your server by editing
 "${TRUEPREFIX}/serviio/config/profiles.xml" and set the "FriendlyName"
 element to something more personalized.
-
-Enable the log.
-
-    # mkdir ${LOCALSTATEDIR}/log/serviio
-    # chown _serviio:_serviio ${LOCALSTATEDIR}/log/serviio
-
-Open up "${TRUEPREFIX}/serviio/config/log4j2.xml" for editing and
-replace the element "fileName" with
-"${LOCALSTATEDIR}/log/serviio/serviio.log" and element "filePattern"
-with "${LOCALSTATEDIR}/log/serviio/serviio.log.%i".
