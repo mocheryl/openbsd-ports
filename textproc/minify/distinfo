@@ -1,7 +1,5 @@
 SHA256 (go_modules/filippo.io/edwards25519/@v/v1.1.0.mod) = CZVW/E1+b1yxNe/di2u0wJMuOOoFjFP8X6XOKFVy+2E=
 SHA256 (go_modules/filippo.io/edwards25519/@v/v1.1.0.zip) = msQ6aG0G/evXGfevOGbIfrBpMCJy37ExAHrfRxwwi2U=
-SHA256 (go_modules/github.com/cheekybits/is/@v/v0.0.0-20150225183255-68e9c0620927.mod) = wo1aGMOmDgJ++Tmy/juUYTaa7qDjgoEuKX1jE40yIGM=
-SHA256 (go_modules/github.com/cheekybits/is/@v/v0.0.0-20150225183255-68e9c0620927.zip) = 97+axbH8V071o3M4KQmvVQ7xp/ARgkaeqhLhjHxfx8s=
 SHA256 (go_modules/github.com/djherbis/atime/@v/v1.1.0.mod) = eeTo1yaP0hOZYOMTL2GJFTpskpSMtwZRii7NChkrb6I=
 SHA256 (go_modules/github.com/djherbis/atime/@v/v1.1.0.zip) = GVzrzOttdjKPXl03MVS1xGpqm/ayeoj5wBWCdqB8fEE=
 SHA256 (go_modules/github.com/fsnotify/fsnotify/@v/v1.8.0.mod) = 2jcTxcV9JS0lUg3g5rOXsDOFizr/Xd3yEWSr4yl8n/k=
@@ -16,8 +14,6 @@ SHA256 (go_modules/github.com/jmoiron/sqlx/@v/v1.4.0.zip) = mSrJtqM7Er2OQRzpyWmS
 SHA256 (go_modules/github.com/lib/pq/@v/v1.10.9.mod) = lMFIhoiyuYIqluE3XjIAKmUswa7nFSD2v6h77I63nAY=
 SHA256 (go_modules/github.com/lib/pq/@v/v1.10.9.zip) = Z5Gnr2f4RqhjNTUAEsTvrdCFAJbr8iNQt7IOAeIW5vI=
 SHA256 (go_modules/github.com/lib/pq/@v/v1.2.0.mod) = TIrIOpiVeYUwFf3mEuZWOybLZ9G5N2SbvgoYd6wkkRQ=
-SHA256 (go_modules/github.com/matryer/try/@v/v0.0.0-20161228173917-9ac251b645a2.mod) = +lQkkRIwBSxVJNkPtoJri3Ba4U9qdmzdDHx0E+EhXNE=
-SHA256 (go_modules/github.com/matryer/try/@v/v0.0.0-20161228173917-9ac251b645a2.zip) = 8a+jakvQvwmhKQ86/vlUBY4zTWsnWq5qWR2NrSdvXi8=
 SHA256 (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.22.mod) = vJI17m5OYCQ/Hn3KzwyqTUgK/N8G7Xjkgf0Sfp4xGd8=
 SHA256 (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.22.zip) = BHeQxPH/eyXlfrNgPn7dji0H4PhoVC6n2SQ6MWw4cl0=
 SHA256 (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.6.mod) = odA8NpvbveDb1GzwuPAn+2XkVFxrp4juFC6DeZhF+9w=
@@ -37,11 +33,9 @@ SHA256 (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.mod) 
 SHA256 (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.zip) = ThgX+WTKNOVFuBr9oDJaXonPWN4uQT2CB8Cv3dD9wVw=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.1.mod) = IVeYYKIDBvz0OxvSNNH7oxlJnHdhG3HAX5vzupDauTk=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.1.zip) = qrj7xOYwDqCOav4crqGKIckMefSJ9SxT4vIEMfGpoBU=
-SHA256 (minify-v2.24.0.zip) = HZzDJIC/HnvUYW6Px6ERq+/lrKWsWkoHS7+qT3UBeJY=
+SHA256 (minify-v2.24.3.zip) = ytcZz0Psy1X4QiCZ94o5RTyua7ezrjkauXiTN/J2Xag=
 SIZE (go_modules/filippo.io/edwards25519/@v/v1.1.0.mod) = 40
 SIZE (go_modules/filippo.io/edwards25519/@v/v1.1.0.zip) = 55809
-SIZE (go_modules/github.com/cheekybits/is/@v/v0.0.0-20150225183255-68e9c0620927.mod) = 32
-SIZE (go_modules/github.com/cheekybits/is/@v/v0.0.0-20150225183255-68e9c0620927.zip) = 7535
 SIZE (go_modules/github.com/djherbis/atime/@v/v1.1.0.mod) = 42
 SIZE (go_modules/github.com/djherbis/atime/@v/v1.1.0.zip) = 8732
 SIZE (go_modules/github.com/fsnotify/fsnotify/@v/v1.8.0.mod) = 279
@@ -56,8 +50,6 @@ SIZE (go_modules/github.com/jmoiron/sqlx/@v/v1.4.0.zip) = 66134
 SIZE (go_modules/github.com/lib/pq/@v/v1.10.9.mod) = 34
 SIZE (go_modules/github.com/lib/pq/@v/v1.10.9.zip) = 132435
 SIZE (go_modules/github.com/lib/pq/@v/v1.2.0.mod) = 25
-SIZE (go_modules/github.com/matryer/try/@v/v0.0.0-20161228173917-9ac251b645a2.mod) = 30
-SIZE (go_modules/github.com/matryer/try/@v/v0.0.0-20161228173917-9ac251b645a2.zip) = 4444
 SIZE (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.22.mod) = 146
 SIZE (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.22.zip) = 2674679
 SIZE (go_modules/github.com/mattn/go-sqlite3/@v/v1.14.6.mod) = 44
@@ -77,4 +69,4 @@ SIZE (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.mod) = 
 SIZE (go_modules/gopkg.in/check.v1/@v/v0.0.0-20161208181325-20d25e280405.zip) = 39844
 SIZE (go_modules/gopkg.in/yaml.v3/@v/v3.0.1.mod) = 95
 SIZE (go_modules/gopkg.in/yaml.v3/@v/v3.0.1.zip) = 104623
-SIZE (minify-v2.24.0.zip) = 7869286
+SIZE (minify-v2.24.3.zip) = 7869216
