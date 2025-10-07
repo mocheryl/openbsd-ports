@@ -1,25 +1,10 @@
-Pistol is a file previewer for command line file managers such as
-Ranger, Lf and nnn, intended to replace the file previewer shell
-script scope.sh commonly used with Ranger and other previewing
-methods.
+Pistol is a file previewer for command line file managers.
 
 Pistol is a Go program (with (almost) 0 dependencies) and its MIME
 type detection is internal. Moreover, it features native preview
 support for almost any archive file and for text files along with
-syntax highlighting while scope.sh relies on external programs to
-do these basic tasks.
-
-The following table lists Pistol's native previewing support:
-- text/*: Prints text files with syntax highlighting thanks to
-chroma.
-- Archives: Prints the contents of archive files using archiver.
+syntax highlighting.
 
 In case Pistol encounters a MIME type it doesn't know how to handle
 natively and you haven't configured a program to handle it, it'll
-print a general description of the file type it encountered. For
-example, the preview for an executable might be: "ELF 64-bit LSB
-executable, x86-64, version 1 (SYSV), dynamically linked, interpreter
-/lib64/ld-linux-x86-64.so.2,
-BuildID[sha1]=a34861a1ae5358dc1079bc239df9dfe4830a8403, for GNU/Linux
-3.2.0, not stripped". This feature is available out of the box just
-like the previews for the common mime types mentioned above.
+print a general description of the file type it encountered.
