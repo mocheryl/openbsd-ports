@@ -1,8 +1,8 @@
 COMMENT =	simple and extensible webmail
 
-V =		20250320115034
+V =	20250812152922
 MODGO_MODNAME =	git.sr.ht/~migadu/alps
-MODGO_VERSION =	v0.0.0-${V}-85ca823eb293
+MODGO_VERSION =	v0.0.0-${V}-2494da2bd988
 
 DISTNAME =	alps-${MODGO_VERSION}
 PKGNAME =	alps-0.0.0.${V}
@@ -19,9 +19,6 @@ PERMIT_PACKAGE =	Yes
 WANTLIB +=	c pthread
 
 MODULES =	lang/go
-
-# For patches to apply
-WRKDIST =	${WRKSRC}
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/alps \
