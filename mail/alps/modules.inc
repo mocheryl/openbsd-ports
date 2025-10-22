@@ -6,11 +6,11 @@ MODGO_MODULES =	\
 	github.com/chzyer/test			 v0.0.0-20180213035817-a1ea475d72b1 \
 	github.com/davecgh/go-spew		 v1.1.1 \
 	github.com/dustin/go-humanize		 v1.0.1 \
-	github.com/emersion/go-ical		 v0.0.0-20250313142940-aefc67679264 \
-	github.com/emersion/go-imap/v2		 v2.0.0-beta.5 \
+	github.com/emersion/go-ical		 v0.0.0-20250609112844-439c63cef608 \
+	github.com/emersion/go-imap/v2		 v2.0.0-beta.6 \
 	github.com/emersion/go-message		 v0.18.2 \
 	github.com/emersion/go-sasl		 v0.0.0-20241020182733-b788ff22d5a6 \
-	github.com/emersion/go-smtp		 v0.21.3 \
+	github.com/emersion/go-smtp		 v0.23.0 \
 	github.com/emersion/go-vcard		 v0.0.0-20241024213814-c9703dde27ff \
 	github.com/emersion/go-webdav		 v0.6.0 \
 	github.com/fernet/fernet-go		 v0.0.0-20240119011108-303da6aec611 \
@@ -50,7 +50,6 @@ MODGO_MODULES =	\
 MODGO_MODFILES =	\
 	github.com/emersion/go-ical	 v0.0.0-20240127095438-fc1c9d8fb2b6 \
 	github.com/emersion/go-message	 v0.18.1 \
-	github.com/emersion/go-sasl	 v0.0.0-20200509203442-7bfe0ed36a21 \
 	github.com/emersion/go-sasl	 v0.0.0-20231106173351-e73c9f7bad43 \
 	github.com/emersion/go-vcard	 v0.0.0-20230815062825-8fda7d206ec9 \
 	github.com/mattn/go-colorable	 v0.1.13 \
