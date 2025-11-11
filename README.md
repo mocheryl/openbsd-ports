@@ -8,6 +8,7 @@ Personal collection of OpenBSD ports.
     integration to the OpenSMTPD daemon.
 -   [multimedia/serviio](multimedia/serviio/) - Free media server.
 -   [multimedia/stash](multimedia/stash/) - Organizer for your porn.
+-   [net/athens](net/athens/) - Go module datastore and proxy.
 -   [net/go-shadowsocks2](net/go-shadowsocks2/) - Modern shadowsocks in Go.
 -   [productivity/tokidoki](productivity/tokidoki/) - Small and robust calendar
     & contacts server.
