@@ -1,0 +1,16 @@
+@newgroup _athens:907
+@newuser _athens:907:_athens::Athens Account:${LOCALSTATEDIR}/athens:/sbin/nologin
+@rcscript ${RCDIR}/athens
+@bin bin/athens
+share/doc/pkg-readmes/${PKGSTEM}
+share/examples/athens/
+@owner _athens
+@group _athens
+@sample ${LOCALSTATEDIR}/athens/
+@sample ${SYSCONFDIR}/athens/
+share/examples/athens/config.toml
+@sample ${SYSCONFDIR}/athens/config.toml
+share/examples/athens/download.hcl
+share/examples/athens/home.html
+share/examples/athens/robots.txt
+@sample ${SYSCONFDIR}/athens/robots.txt

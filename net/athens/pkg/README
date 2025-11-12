@@ -1,0 +1,14 @@
++-----------------------------------------------------------------------
+| Running ${PKGSTEM} on OpenBSD
++-----------------------------------------------------------------------
+
+Setup
+=====
+
+Add Athens to your run command file and start it.
+
+    # rcctl enable athens
+
+Navigate your browser to your Athens intance's home page and follow the
+instructions on how to setup your GO (development) environment.
+

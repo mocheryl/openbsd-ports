@@ -1,0 +1,7 @@
+Athens is a server for your Go packages.
+
+Athens is an open source enterprise ready Go Module proxy with
+extensive configuration for a variety of online and offline usecases.
+It is in use for anti-censorship, compliance, data privacy, and
+data continuity usecases in homes and corporations across the globe
+today.

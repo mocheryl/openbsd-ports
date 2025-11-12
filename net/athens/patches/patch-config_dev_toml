@@ -1,0 +1,63 @@
+Index: config.dev.toml
+--- config.dev.toml.orig
++++ config.dev.toml
+@@ -8,12 +8,12 @@
+ # GoBinary returns the path to the go binary to use. This value can be a name of a binary in your PATH, or the full path
+ # Defaults to "go"
+ # Env override: GO_BINARY_PATH
+-GoBinary = "go"
++GoBinary = "${PREFIX}/bin/go"
+ 
+ # GoEnv specifies the type of environment to run.
+ # Supported values are: 'development' and 'production'. Defaults to "development"
+ # Env override: GO_ENV
+-GoEnv = "development"
++GoEnv = "production"
+ 
+ # GoBinaryEnvVars are environment variables that you'd like
+ # to pass directly to the Go command that Athens runs under the
+@@ -76,7 +76,7 @@ ProtocolWorkers = 30
+ # LogLevel returns the system's exposure to internal logs. Defaults to debug.
+ # Supports all logrus log levels (https://github.com/Sirupsen/logrus#level-logging)
+ # Env override: ATHENS_LOG_LEVEL
+-LogLevel = "debug"
++LogLevel = "info"
+ 
+ # LogFormat determines the format that logs are output in. Defaults to json.
+ # It is only used when CloudRuntime is set to none. Values can be "plain" or "json".
+@@ -111,7 +111,7 @@ FilterFile = ""
+ # To provide /robots.txt for net crawler.
+ # Default disallow all crawler.
+ # Content details to see https://support.google.com/webmasters/answer/6062608
+-RobotsFile = "robots.txt"
++RobotsFile = "${SYSCONFDIR}/athens/robots.txt"
+ 
+ # Timeout is the timeout for external network calls in seconds
+ # This value is used as the default for storage backends if they don't specify timeouts
+@@ -123,7 +123,7 @@ Timeout = 300
+ # Possible values are memory, disk, mongo, gcp, minio, s3, azureblob, external
+ # Defaults to memory
+ # Env override: ATHENS_STORAGE_TYPE
+-StorageType = "memory"
++StorageType = "disk"
+ 
+ # Certificate and key to make athens serve using https instead of plain text http.
+ # Set both to enable.
+@@ -171,7 +171,7 @@ BasicAuthPass = ""
+ 
+ # A path on disk to a Go HTML template to be used on the homepage
+ # Env override: ATHENS_HOME_TEMPLATE_PATH
+-HomeTemplatePath = "/var/lib/athens/home.html"
++HomeTemplatePath = "${SYSCONFDIR}/athens/home.html"
+ 
+ # Set to true to force an SSL redirect
+ # Env override: PROXY_FORCE_SSL
+@@ -399,7 +399,7 @@ ShutdownTimeout = 60
+     [Storage.Disk]
+         # RootPath is the Athens Disk Root folder
+         # Env override: ATHENS_DISK_STORAGE_ROOT
+-        RootPath = "/path/on/disk"
++        RootPath = "${LOCALSTATEDIR}/athens"
+ 
+     [Storage.GCP]
+         # Required IAM Roles (https://cloud.google.com/storage/docs/access-control/iam-roles):
