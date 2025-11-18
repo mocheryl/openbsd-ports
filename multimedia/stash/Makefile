@@ -1,7 +1,7 @@
 COMMENT =	organizer for your porn
 
 MODGO_MODNAME =	github.com/stashapp/stash
-MODGO_VERSION =	v0.28.1
+MODGO_VERSION =	v0.29.3
 
 DISTNAME =	stash-${MODGO_VERSION}
 
@@ -11,9 +11,11 @@ HOMEPAGE =	https://stashapp.cc/
 
 MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 
-# Distributable build generated on LMDE 6 using yarnpkg v1.22.19 and
-# golang v1.23.5
-# cd ui/v2.5 && yarnpkg install --frozen-lockfile
+# Distributable build generated on LMDE 7 using yarnpkg v4.1.0 and
+# golang v1.24.4
+# wget https://github.com/stashapp/stash/archive/refs/tags/v{$V}.tar.gz
+# tar xvvzf v{$V}.tar.gz
+# cd stash-{$V}/ui/v2.5/ && yarnpkg install
 # yarnpkg run gqlgen
 # mkdir -p /tmp/stash-build-${V}/{core,api}
 # cp src/core/generated-*.ts /tmp/stash-build-${V}/core/
@@ -30,7 +32,7 @@ SITES.gh =	https://github.com/stashapp/stash/releases/download/${MODGO_VERSION}/
 # AGPL-3.0
 PERMIT_PACKAGE =	Yes
 
-WANTLIB +=	c pthread
+WANTLIB +=	c m pthread
 
 MODULES =	lang/go
 
