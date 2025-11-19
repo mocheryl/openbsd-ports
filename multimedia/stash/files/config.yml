@@ -11,15 +11,6 @@ host: 0.0.0.0
 logaccess: false
 logfile: ${LOCALSTATEDIR}/log/stash/stash.log
 logout: false
-menu_items:
-    - scenes
-    - images
-    - groups
-    - markers
-    - galleries
-    - performers
-    - studios
-    - tags
 no_proxy: localhost,127.0.0.1,192.168.0.0/16,10.0.0.0/8,172.16.0.0/12
 nobrowser: true
 notifications_enabled: true
