@@ -1,9 +1,9 @@
 COMMENT =	ClamAV integration to the OpenSMTPD daemon
 
 MODGO_MODNAME =	github.com/mocheryl/opensmtpd-filter-clamav
-MODGO_VERSION =	v0.4.0
+MODGO_VERSION =	v0.4.1
 
-V =	0.4.0
+V =	0.4.1
 FILTER_NAME =	clamav
 DISTNAME =	filter-clamav-${MODGO_VERSION}
 
