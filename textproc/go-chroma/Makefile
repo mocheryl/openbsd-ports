@@ -1,7 +1,7 @@
 COMMENT-main =	general purpose syntax highlighter in pure Go
 COMMENT-web =	general purpose syntax highlighter in pure Go (web UI)
 
-V =	2.20.0
+V =	2.22.0
 
 DISTNAME =	chroma-${V}
 PKGNAME-main =	go-chroma-${V}
