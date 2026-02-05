@@ -1,5 +1,6 @@
 Stash is a self-hosted webapp written in Go which organizes and serves
-your porn.
+your diverse content collection, catering to both your SFW and NSFW
+needs.
 
 Stash gathers information about videos in your collection from the
 internet, and is extensible through the use of community-built plugins
