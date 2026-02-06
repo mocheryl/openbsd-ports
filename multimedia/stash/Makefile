@@ -1,7 +1,7 @@
 COMMENT =	organizer for your porn
 
 MODGO_MODNAME =	github.com/stashapp/stash
-MODGO_VERSION =	v0.29.3
+MODGO_VERSION =	v0.30.1
 
 DISTNAME =	stash-${MODGO_VERSION}
 
@@ -11,18 +11,18 @@ HOMEPAGE =	https://stashapp.cc/
 
 MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 
-# Distributable build generated on LMDE 7 using yarnpkg v4.1.0 and
-# golang v1.24.4
-# wget https://github.com/stashapp/stash/archive/refs/tags/v{$V}.tar.gz
+# ftp https://github.com/stashapp/stash/archive/refs/tags/v{$V}.tar.gz
 # tar xvvzf v{$V}.tar.gz
-# cd stash-{$V}/ui/v2.5/ && yarnpkg install
-# yarnpkg run gqlgen
-# mkdir -p /tmp/stash-build-${V}/{core,api}
-# cp src/core/generated-*.ts /tmp/stash-build-${V}/core/
-# cd ../.. && go generate ./cmd/stash
-# cp internal/api/generated_*.go /tmp/stash-build-${V}/api/
-# cd /tmp && tar -cvvf stash-build-${V}.tar -C /tmp stash-build-${V}
-# gzip -9v stash-build-${V}.tar
+# cd stash-{$V}/ui/v2.5/ && pnpm install --frozen-lockfile
+# npm run gqlgen
+# mkdir -p /tmp/stash-build-v${V}/{core,api}
+# cp src/core/generated-*.ts /tmp/stash-build-v${V}/core/
+# cd .. && go generate
+# cp -r login/locales /tmp/stash-build-v0.30.1/
+# cd .. && go generate ./cmd/stash
+# cp internal/api/generated_*.go /tmp/stash-build-v${V}/api/
+# cd /tmp/ && tar -cvvf stash-build-v${V}.tar stash-build-v${V}
+# gzip -9vo stash-build-v${V}.tar.gz stash-build-v${V}.tar
 DISTFILES.mocheryl =	stash-build-${MODGO_VERSION}.tar.gz
 DISTFILES.gh =	stash-ui.zip
 
@@ -46,7 +46,8 @@ post-extract:
 	${GZIP_CMD} -d <${FULLDISTDIR}/stash-build-${MODGO_VERSION}.tar.gz | \
 		${TAR} -xf - -C ${WRKSRC} && \
 		cp ${WRKSRC}/stash-build-${MODGO_VERSION}/api/* ${WRKSRC}/internal/api/ && \
-		cp ${WRKSRC}/stash-build-${MODGO_VERSION}/core/* ${WRKSRC}/ui/v2.5/src/core/		
+		cp ${WRKSRC}/stash-build-${MODGO_VERSION}/core/* ${WRKSRC}/ui/v2.5/src/core/ && \
+		cp -r ${WRKSRC}/stash-build-${MODGO_VERSION}/locales ${WRKSRC}/ui/login/
 
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/stash
