@@ -18,7 +18,6 @@ Personal collection of OpenBSD ports.
 -   [sysutils/pistol](sysutils/pistol/) - General purpose file previewer.
 -   [textproc/go-chroma](textproc/go-chroma/) - General purpose syntax
     highlighter in pure Go.
--   [textproc/minify](textproc/minify/) - Minifiers for web formats.
 -   [www/forgejo](www/forgejo/) - Self-hosted lightweight version control.
 
 ## Usage
