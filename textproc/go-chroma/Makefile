@@ -1,7 +1,7 @@
 COMMENT-main =	general purpose syntax highlighter in pure Go
 COMMENT-web =	general purpose syntax highlighter in pure Go (web UI)
 
-V =	2.22.0
+V =	2.23.1
 
 DISTNAME =	chroma-${V}
 PKGNAME-main =	go-chroma-${V}
@@ -45,8 +45,10 @@ MODULES =	lang/go
 pre-build:
 	@mv ${WRKSRC}/cmd/chroma ${WRKSRC}/cmd/gochroma
 	@mv ${WRKSRC}/cmd/chromad ${WRKSRC}/cmd/gochromad
-	@esbuild --platform=node --bundle ${WRKSRC}/cmd/gochromad/static/index.js \
-		--minify --outfile=${WRKSRC}/cmd/gochromad/static/index.min.js
+	@esbuild --platform=browser --format=esm \
+		--bundle ${WRKSRC}/cmd/gochromad/static/index.js \
+		--minify --external:./wasm_exec.js \
+		--outfile=${WRKSRC}/cmd/gochromad/static/index.min.js
 	@esbuild --bundle ${WRKSRC}/cmd/gochromad/static/index.css --minify \
 		--outfile=${WRKSRC}/cmd/gochromad/static/index.min.css
 
