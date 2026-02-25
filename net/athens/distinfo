@@ -1,4 +1,4 @@
-SHA256 (athens-v0.16.1.zip) = m0U9jcVyN+GZ233gRW0bSgWeUgLUpLaNWHO9LnQH/mc=
+SHA256 (athens-v0.16.2.zip) = W/hO2AnZwpq+hkUzwwP4wKkgbJYOJ4FiHY1LvSDeBYU=
 SHA256 (go_modules/bazil.org/fuse/@v/v0.0.0-20160811212531-371fbbdaa898.mod) = MD4nhaVovDG14RnIuRCqK7P0CwrvSTzgh4VRD2yOooQ=
 SHA256 (go_modules/bazil.org/fuse/@v/v0.0.0-20200407214033-5883e5a4b512.mod) = 50aX5gty9fbyfGT9vBrSRUc+aFXjuORwMeUgcxfwqV0=
 SHA256 (go_modules/bazil.org/fuse/@v/v0.0.0-20200407214033-5883e5a4b512.zip) = 86w1BEybzxfE51+4zr2CboTb5fnDayRRPiqCiiQ+3m0=
@@ -2978,7 +2978,7 @@ SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.1.0.mod) = JC1yDRxq7+SjBcM0GoBXXhmlRRe
 SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.2.0.mod) = 8ikTVRI4fWZj4fCZmkkiq3CN7UvcgExxzpPj1gK6ld0=
 SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.4.0.mod) = CZ2G+OBNET1A9KFSzf4AFxFtfv6mjkF6nGRthgJj174=
 SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.4.0.zip) = 7wMf94/5twNuF07vSd+9d0aNxPCvtzpjm2H4qzocxCU=
-SIZE (athens-v0.16.1.zip) = 4249938
+SIZE (athens-v0.16.2.zip) = 4251059
 SIZE (go_modules/bazil.org/fuse/@v/v0.0.0-20160811212531-371fbbdaa898.mod) = 22
 SIZE (go_modules/bazil.org/fuse/@v/v0.0.0-20200407214033-5883e5a4b512.mod) = 158
 SIZE (go_modules/bazil.org/fuse/@v/v0.0.0-20200407214033-5883e5a4b512.zip) = 236558
