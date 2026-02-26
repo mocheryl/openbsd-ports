@@ -1,5 +1,5 @@
-@newgroup _forgejo:905
-@newuser _forgejo:905:_forgejo::Forgejo Account:${LOCALSTATEDIR}/forgejo:/bin/sh
+@newgroup _forgejo:907
+@newuser _forgejo:907:_forgejo::Forgejo Account:${LOCALSTATEDIR}/forgejo:/bin/sh
 @rcscript ${RCDIR}/forgejo
 @bin bin/forgejo
 @man man/man1/forgejo.1
