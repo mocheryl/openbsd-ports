@@ -1,4 +1,4 @@
-SHA256 (badger-v4.9.0.zip) = aeyEXQyMO7RjemiArcLqsIDftpqjCopAo8hSfGc4EgM=
+SHA256 (badger-v4.9.1.zip) = 9g5osAzLpfpvowTEG62kcftRd2t/bbVEXV3l/uY0/jI=
 SHA256 (go_modules/github.com/cespare/xxhash/v2/@v/v2.3.0.mod) = oJD46q9ZzCrfFjKZ6+/nl+Hco/at0sjoimo7kLpTiwI=
 SHA256 (go_modules/github.com/cespare/xxhash/v2/@v/v2.3.0.zip) = FFomzcfEnbVmAXuAfEmJ7n993rVpQj6cuZ+ZX6w2IdM=
 SHA256 (go_modules/github.com/cpuguy83/go-md2man/v2/@v/v2.0.6.mod) = u4Gp4tFNmlhvBZGFO9qtIw2M3w2Nb/px3driSa1XPMk=
@@ -84,7 +84,7 @@ SHA256 (go_modules/gopkg.in/check.v1/@v/v1.0.0-20201130134442-10cb98267c6c.mod) 
 SHA256 (go_modules/gopkg.in/check.v1/@v/v1.0.0-20201130134442-10cb98267c6c.zip) = 9VVoTlxdrMKFDd2zRf7xuPk/VGtyaFWJeJ2m0rBicQ4=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.1.mod) = IVeYYKIDBvz0OxvSNNH7oxlJnHdhG3HAX5vzupDauTk=
 SHA256 (go_modules/gopkg.in/yaml.v3/@v/v3.0.1.zip) = qrj7xOYwDqCOav4crqGKIckMefSJ9SxT4vIEMfGpoBU=
-SIZE (badger-v4.9.0.zip) = 466452
+SIZE (badger-v4.9.1.zip) = 469778
 SIZE (go_modules/github.com/cespare/xxhash/v2/@v/v2.3.0.mod) = 45
 SIZE (go_modules/github.com/cespare/xxhash/v2/@v/v2.3.0.zip) = 17573
 SIZE (go_modules/github.com/cpuguy83/go-md2man/v2/@v/v2.0.6.mod) = 100
