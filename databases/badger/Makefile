@@ -1,7 +1,7 @@
 COMMENT =	tools to manage Badger database
 
 MODGO_MODNAME =	github.com/dgraph-io/badger/v4
-MODGO_VERSION =	v4.9.0
+MODGO_VERSION =	v4.9.1
 
 DISTNAME =	badger-${MODGO_VERSION}
 
