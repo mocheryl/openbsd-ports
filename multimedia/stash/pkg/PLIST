@@ -1,5 +1,5 @@
-@newgroup _stash:908
-@newuser _stash:908:_stash::Stash Account:${LOCALSTATEDIR}/stash:/sbin/nologin
+@newgroup _stash:910
+@newuser _stash:910:_stash::Stash Account:${LOCALSTATEDIR}/stash:/sbin/nologin
 @rcscript ${RCDIR}/stash
 @bin bin/phasher
 @bin bin/stash

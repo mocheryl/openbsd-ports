@@ -1,5 +1,5 @@
-@newgroup _athens:909
-@newuser _athens:909:_athens::Athens Account:${LOCALSTATEDIR}/athens:/sbin/nologin
+@newgroup _athens:911
+@newuser _athens:911:_athens::Athens Account:${LOCALSTATEDIR}/athens:/sbin/nologin
 @rcscript ${RCDIR}/athens
 @bin bin/athens
 share/doc/pkg-readmes/${PKGSTEM}
