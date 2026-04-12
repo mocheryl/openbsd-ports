@@ -4,7 +4,7 @@ ONLY_FOR_ARCHS =	amd64
 COMMENT =	free media server
 
 V =	2.4
-REVISION =	0
+REVISION =	1
 
 DISTNAME =	serviio-$V-linux
 PKGNAME =	serviio-$V
@@ -21,7 +21,7 @@ PERMIT_DISTFILES =	https://serviio.org/licence
 
 SITES =	https://download.serviio.org/releases/
 
-RUN_DEPENDS =	devel/jdk/1.8 \
+RUN_DEPENDS =	devel/jdk/11 \
 				graphics/dcraw \
 				graphics/ffmpeg
 

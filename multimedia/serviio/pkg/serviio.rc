@@ -1,6 +1,6 @@
 #!/bin/ksh
 
-JAVA_HOME="${TRUEPREFIX}/jdk-1.8.0"
+JAVA_HOME="${TRUEPREFIX}/jdk-11"
 JAVA="$JAVA_HOME/bin/java"
 
 # Setup the classpath
