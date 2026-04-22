@@ -1,7 +1,7 @@
 COMMENT =	Go module datastore and proxy
 
 MODGO_MODNAME =	github.com/gomods/athens
-MODGO_VERSION =	v0.16.2
+MODGO_VERSION =	v0.17.0
 
 DISTNAME =	athens-${MODGO_VERSION}
 

@@ -34,7 +34,7 @@ Index: config.dev.toml
  
  # Timeout is the timeout for external network calls in seconds
  # This value is used as the default for storage backends if they don't specify timeouts
-@@ -123,7 +123,7 @@ Timeout = 300
+@@ -130,7 +130,7 @@ StashTimeout = 600
  # Possible values are memory, disk, mongo, gcp, minio, s3, azureblob, external
  # Defaults to memory
  # Env override: ATHENS_STORAGE_TYPE
@@ -43,7 +43,7 @@ Index: config.dev.toml
  
  # Certificate and key to make athens serve using https instead of plain text http.
  # Set both to enable.
-@@ -171,7 +171,7 @@ BasicAuthPass = ""
+@@ -178,7 +178,7 @@ BasicAuthPass = ""
  
  # A path on disk to a Go HTML template to be used on the homepage
  # Env override: ATHENS_HOME_TEMPLATE_PATH
@@ -52,7 +52,7 @@ Index: config.dev.toml
  
  # Set to true to force an SSL redirect
  # Env override: PROXY_FORCE_SSL
-@@ -399,7 +399,7 @@ ShutdownTimeout = 60
+@@ -406,7 +406,7 @@ ShutdownTimeout = 60
      [Storage.Disk]
          # RootPath is the Athens Disk Root folder
          # Env override: ATHENS_DISK_STORAGE_ROOT
