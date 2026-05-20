@@ -1,4 +1,4 @@
-SHA256 (athens-v0.17.0.zip) = OBHHNGhb3xXV2E+elHi95YYinibeawkydoqCGg8kcXc=
+SHA256 (athens-v0.17.1.zip) = UhUUTpV/A+Awc+goaLdWcaTexByBZ7aykpaxjsROcuM=
 SHA256 (go_modules/buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/@v/v1.36.6-20250425153114-8976f5be98c1.1.mod) = Xw8j9TmB3ga/DgZRL6wfl7jkV1MFT1P3RtMP3LJGF5E=
 SHA256 (go_modules/buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/@v/v1.36.6-20250425153114-8976f5be98c1.1.zip) = 4rI+NPs5lihBn/7g0rTvWY/oOoijERVhqKJ1M07McNo=
 SHA256 (go_modules/buf.build/go/protovalidate/@v/v0.12.0.mod) = 31ocikZCpNPv3zzzFj+F+NFwFelB+wrTu4X0QjsK8lU=
@@ -2525,7 +2525,7 @@ SHA256 (go_modules/sigs.k8s.io/structured-merge-diff/v6/@v/v6.3.0.zip) = vLDmYuM
 SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.4.0.mod) = CZ2G+OBNET1A9KFSzf4AFxFtfv6mjkF6nGRthgJj174=
 SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.6.0.mod) = Tjw8HUmmZSRA/3D7R15Urka+LKtjzEZyGzwC/ZzKmF4=
 SHA256 (go_modules/sigs.k8s.io/yaml/@v/v1.6.0.zip) = z4hkikcVgYF7AKQu6NJP1z6w41A5mM9G2OY3h+EeUFI=
-SIZE (athens-v0.17.0.zip) = 4215597
+SIZE (athens-v0.17.1.zip) = 4232689
 SIZE (go_modules/buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/@v/v1.36.6-20250425153114-8976f5be98c1.1.mod) = 119
 SIZE (go_modules/buf.build/gen/go/bufbuild/protovalidate/protocolbuffers/go/@v/v1.36.6-20250425153114-8976f5be98c1.1.zip) = 109991
 SIZE (go_modules/buf.build/go/protovalidate/@v/v0.12.0.mod) = 975
