@@ -3,8 +3,7 @@ ONLY_FOR_ARCHS =	amd64
 
 COMMENT =	free media server
 
-V =	2.4
-REVISION =	1
+V =	2.5
 
 DISTNAME =	serviio-$V-linux
 PKGNAME =	serviio-$V
@@ -34,7 +33,7 @@ WRKDIST =	${WRKDIR}
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/serviio
 .for _c in application-profiles.xml log4j2.xml profiles.xml serviio.jks
-	${INSTALL_DATA} -c -m 755 ${WRKDIR}/serviio-$V/config/${_c} \
+	${INSTALL_DATA} ${WRKDIR}/serviio-$V/config/${_c} \
 		${PREFIX}/share/examples/serviio/
 .endfor
 	${SUBST_CMD} ${PREFIX}/share/examples/serviio/log4j2.xml
