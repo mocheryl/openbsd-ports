@@ -1,6 +1,6 @@
-Index: serviio-2.4/config/log4j2.xml
---- serviio-2.4/config/log4j2.xml.orig
-+++ serviio-2.4/config/log4j2.xml
+Index: serviio-2.5/config/log4j2.xml
+--- serviio-2.5/config/log4j2.xml.orig
++++ serviio-2.5/config/log4j2.xml
 @@ -9,7 +9,7 @@
  <Configuration>
  

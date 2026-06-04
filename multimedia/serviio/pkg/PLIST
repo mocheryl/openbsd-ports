@@ -93,7 +93,6 @@ share/examples/login.conf.d/serviio
 @sample ${SYSCONFDIR}/login.conf.d/serviio
 @sample ${SYSCONFDIR}/serviio/
 share/examples/serviio/
-@mode 755
 @owner _serviio
 @group _serviio
 share/examples/serviio/application-profiles.xml
