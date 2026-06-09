@@ -37,6 +37,8 @@ security_tripwire_accessed_from_public_internet: ""
 sequential_scanning: false
 show_one_time_moved_notification: false
 sound_on_preview: false
+sprite_interval: 30
+sprite_screenshot_width: 160
 stash:
     - path: ${LOCALSTATEDIR}/stash/images
       excludevideo: true
