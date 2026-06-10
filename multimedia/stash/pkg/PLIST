@@ -10,12 +10,8 @@ share/examples/stash/
 @group _stash
 @sample ${SYSCONFDIR}/stash/
 @mode
-@owner
-@group
 share/examples/stash/config.yml
 @mode 640
-@owner _stash
-@group _stash
 @sample ${SYSCONFDIR}/stash/config.yml
 @mode 755
 @sample ${LOCALSTATEDIR}/log/stash/
