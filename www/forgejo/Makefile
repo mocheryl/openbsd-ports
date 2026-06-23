@@ -1,6 +1,6 @@
 COMMENT =	self-hosted lightweight version control
 
-V =	11.0.14
+V =	11.0.15
 DISTNAME =	forgejo-src-${V}
 PKGNAME =	forgejo-${V}
 
