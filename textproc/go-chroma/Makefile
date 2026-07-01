@@ -1,7 +1,7 @@
 COMMENT-main =	general purpose syntax highlighter in pure Go
 COMMENT-web =	general purpose syntax highlighter in pure Go (web UI)
 
-V =	2.23.1
+V =	2.27.0
 
 DISTNAME =	chroma-${V}
 PKGNAME-main =	go-chroma-${V}
@@ -27,19 +27,21 @@ MULTI_PACKAGES =	-main -web
 #     chmod -x cmd/chromad/static/chroma.wasm
 # cp ~/tinygo/targets/wasm_exec.js cmd/chromad/static/
 
-# cd cmd/chroma/ && go mod vendor
+# ftp https://github.com/alecthomas/chroma/archive/refs/tags/v{$V}.tar.gz
+# tar xvvzf v{$V}.tar.gz
+# cd chroma-{$V}/cmd/chroma/ && go mod vendor
 # cd ../chromad/ && go mod vendor
-# cd .. && mkdir -p ../../chroma-${V}/cmd
-# cp -r chroma chromad ../../chroma-${V}/cmd/
-# cd ../../ && tar -cf chroma-${V}.tar chroma-${V}
-# gzip -9o chroma-${V}.tar.gz chroma-${V}.tar
+# cd .. && mkdir -p /tmp/chroma-{$V}/cmd
+# cp -r chroma chromad /tmp/chroma-{$V}/cmd/
+# cd /tmp/ && tar -cvvf chroma-{$V}.tar chroma-{$V}
+# gzip -9vo chroma-{$V}.tar.gz chroma-{$V}.tar
 SITES =	https://ports.mocheryl.org/releases/
-
-MODGO_LDFLAGS +=	-X 'main.version=${V}'
 
 BUILD_DEPENDS =	devel/esbuild
 
 MODULES =	lang/go
+
+MODGO_LDFLAGS +=	-X 'main.version=${V}'
 
 # Rename to avoid conflict with games/chroma
 pre-build:
