@@ -3,6 +3,7 @@
 daemon="${TRUEPREFIX}/bin/athens"
 daemon_logger="daemon.info"
 daemon_user="_athens"
+daemon_flags="-config_file ${SYSCONFDIR}/athens/config.toml"
 
 . /etc/rc.d/rc.subr
 
