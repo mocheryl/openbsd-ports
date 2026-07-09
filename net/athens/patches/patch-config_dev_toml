@@ -52,7 +52,7 @@ Index: config.dev.toml
  
  # Set to true to force an SSL redirect
  # Env override: PROXY_FORCE_SSL
-@@ -406,7 +406,7 @@ ShutdownTimeout = 60
+@@ -416,7 +416,7 @@ ShutdownTimeout = 60
      [Storage.Disk]
          # RootPath is the Athens Disk Root folder
          # Env override: ATHENS_DISK_STORAGE_ROOT
