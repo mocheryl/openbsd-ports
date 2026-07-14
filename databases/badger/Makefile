@@ -1,7 +1,7 @@
 COMMENT =	tools to manage Badger database
 
 MODGO_MODNAME =	github.com/dgraph-io/badger/v4
-MODGO_VERSION =	v4.9.2
+MODGO_VERSION =	v4.9.4
 
 DISTNAME =	badger-${MODGO_VERSION}
 
@@ -14,7 +14,7 @@ MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 # apache 2.0
 PERMIT_PACKAGE =	Yes
 
-WANTLIB +=	c pthread
+WANTLIB += c pthread
 
 MODULES =	lang/go
 
