@@ -1,6 +1,6 @@
 COMMENT =	self-hosted lightweight version control
 
-V =	11.0.15
+V =	11.0.16
 DISTNAME =	forgejo-src-${V}
 PKGNAME =	forgejo-${V}
 
@@ -15,7 +15,7 @@ MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 # GPL v3+
 PERMIT_PACKAGE =	Yes
 
-WANTLIB +=	c pthread
+WANTLIB += c pthread
 
 MODULES =	lang/go
 
