@@ -1,7 +1,7 @@
 COMMENT =	Go module datastore and proxy
 
 MODGO_MODNAME =	github.com/gomods/athens
-MODGO_VERSION =	v0.18.0
+MODGO_VERSION =	v0.18.1
 
 DISTNAME =	athens-${MODGO_VERSION}
 
@@ -14,11 +14,12 @@ MAINTAINER =	Igor Zornik <mocheryl@mocheryl.org>
 # MIT
 PERMIT_PACKAGE =	Yes
 
-WANTLIB +=	c pthread
+WANTLIB += c pthread
 
 MODULES =	lang/go
 
 MODGO_LDFLAGS +=	-X github.com/gomods/athens/pkg/build.version=${MODGO_VERSION}
+MODGO_LDFLAGS +=	-X github.com/gomods/athens/pkg/build.buildDate=`date -u +%Y-%m-%d-%H:%M:%S-%Z`
 
 RUN_DEPENDS =	lang/go
 
