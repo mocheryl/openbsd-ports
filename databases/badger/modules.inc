@@ -16,20 +16,21 @@ MODGO_MODULES =	\
 	github.com/kr/pretty			 v0.3.1 \
 	github.com/kr/text			 v0.2.0 \
 	github.com/pmezard/go-difflib		 v1.0.0 \
-	github.com/rogpeppe/go-internal		 v1.13.1 \
+	github.com/rogpeppe/go-internal		 v1.14.1 \
 	github.com/russross/blackfriday/v2	 v2.1.0 \
 	github.com/spf13/cobra			 v1.9.1 \
 	github.com/spf13/pflag			 v1.0.6 \
 	github.com/stretchr/objx		 v0.5.2 \
-	github.com/stretchr/testify		 v1.10.0 \
-	go.opentelemetry.io/auto/sdk		 v1.1.0 \
-	go.opentelemetry.io/contrib/zpages	 v0.62.0 \
-	go.opentelemetry.io/otel		 v1.37.0 \
-	go.opentelemetry.io/otel/metric		 v1.37.0 \
-	go.opentelemetry.io/otel/sdk		 v1.37.0 \
-	go.opentelemetry.io/otel/trace		 v1.37.0 \
+	github.com/stretchr/testify		 v1.11.1 \
+	go.opentelemetry.io/auto/sdk		 v1.2.1 \
+	go.opentelemetry.io/contrib/zpages	 v0.66.0 \
+	go.opentelemetry.io/otel		 v1.41.0 \
+	go.opentelemetry.io/otel/metric		 v1.41.0 \
+	go.opentelemetry.io/otel/sdk		 v1.41.0 \
+	go.opentelemetry.io/otel/sdk/metric	 v1.41.0 \
+	go.opentelemetry.io/otel/trace		 v1.41.0 \
 	go.uber.org/goleak			 v1.3.0 \
-	golang.org/x/sys			 v0.35.0 \
+	golang.org/x/sys			 v0.41.0 \
 	golang.org/x/xerrors			 v0.0.0-20191204190536-9bdfabe68543 \
 	google.golang.org/protobuf		 v1.36.7 \
 	gopkg.in/check.v1			 v1.0.0-20201130134442-10cb98267c6c \
@@ -38,9 +39,9 @@ MODGO_MODULES =	\
 MODGO_MODFILES =	\
 	github.com/go-logr/logr		 v1.2.2 \
 	github.com/google/go-cmp	 v0.5.5 \
-	go.opentelemetry.io/otel	 v1.32.0 \
-	go.opentelemetry.io/otel/trace	 v1.32.0 \
+	github.com/stretchr/testify	 v1.10.0 \
+	go.opentelemetry.io/otel	 v1.38.0 \
+	go.opentelemetry.io/otel/trace	 v1.38.0 \
 	golang.org/x/sys		 v0.31.0 \
-	golang.org/x/sys		 v0.33.0 \
 	gopkg.in/check.v1		 v0.0.0-20161208181325-20d25e280405
 
