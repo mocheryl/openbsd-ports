@@ -1,7 +1,7 @@
 COMMENT =	general purpose file previewer
 
 MODGO_MODNAME =	github.com/doronbehar/pistol
-MODGO_VERSION =	v0.5.3
+MODGO_VERSION =	v0.6.0
 
 DISTNAME =	pistol-${MODGO_VERSION}
 
